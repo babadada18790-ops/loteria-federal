@@ -1,0 +1,14 @@
+{
+ "atualizado": "2026-11-19T18:20:00-03:00",
+ "data": "2026-11-19",
+ "horario": "PTN 18:20",
+ "fonte": "https://bicho-hoje.com/resultado/ptn-hoje",
+ "licenca": "CC BY 4.0",
+ "premios": [
+  { "premio": 1, "milhar": 2083, "grupo": 21, "bicho": "Touro", "horario": "PTN" },
+  { "premio": 2, "milhar": 9301, "grupo": 1, "bicho": "Avestruz", "horario": "PTN" },
+  { "premio": 3, "milhar": 5264, "grupo": 16, "bicho": "Leão", "horario": "PTN" },
+  { "premio": 4, "milhar": 6267, "grupo": 17, "bicho": "Macaco", "horario": "PTN" },
+  { "premio": 5, "milhar": 9762, "grupo": 16, "bicho": "Leão", "horario": "PTN" }
+ ]
+}

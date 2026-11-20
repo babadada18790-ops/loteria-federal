@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Widget Bicho Hoje — demonstração</title>
+<style>
+  body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:640px;
+       margin:48px auto;padding:0 20px;color:#1d1d1f}
+  h1{font-size:22px;margin-bottom:6px}
+  p{color:#6b6b70;font-size:14px}
+  pre{background:#f7f7f8;border:1px solid #e3e3e6;border-radius:8px;padding:14px;
+      font-size:12px;overflow-x:auto;user-select:all}
+  .exemplo{border:2px dashed #d8d8dc;border-radius:12px;padding:20px;margin:24px 0}
+</style>
+</head>
+<body>
+
+<h1>Widget do Bicho Hoje</h1>
+<p>Duas linhas de HTML. Nenhuma dependência. O crédito "Fonte: Bicho Hoje" vem junto por padrão.</p>
+
+<div class="exemplo">
+  <!-- ▼ é exatamente isto que o site de terceiro cola ▼ -->
+  <script src="bicho-widget.js" data-bicho-hoje data-limite="5" defer></script>
+  <!-- ▲ fim ▲ -->
+</div>
+
+<pre>&lt;script src="https://cdn.jsdelivr.net/gh/babadada18790-ops/loteria-federal@main/docs/widget/bicho-widget.js"
+        data-bicho-hoje data-limite="5" defer&gt;&lt;/script&gt;</pre>
+
+<p>Atributos aceitos: <code>data-limite</code> (quantos prêmios mostrar, padrão 5) e
+<code>data-api</code> (apontar para outro JSON). O widget usa Shadow DOM, então o CSS do site
+que embute não vaza para dentro dele — e vice-versa.</p>
+
+<p>Se a API falhar, ele mostra um link de volta para o site em vez de um espaço vazio.
+Isso é de propósito: falha silenciosa faz o site parceiro remover o widget.</p>
+
+</body>
+</html>

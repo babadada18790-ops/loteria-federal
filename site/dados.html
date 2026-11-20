@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dados abertos: 64 anos da Loteria Federal e os 25 grupos do bicho (1962–2026)</title>
+<meta name="description" content="Base aberta com 6117 concursos e 30390 prêmios da Loteria Federal (1962–2026) convertidos nos 25 grupos do jogo do bicho. Teste qui-quadrado: χ² = 20,14, p = 0,69 — distribuição uniforme. CC BY 4.0.">
+<link rel="canonical" href="https://bicho-hoje.com/dados">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Loteria Federal — Grupos do Jogo do Bicho (1962–2026)",
+  "description": "30.390 prêmios válidos da Loteria Federal (concursos 1 a 6.117, 1962–2026) convertidos nos 25 grupos do jogo do bicho. Teste de aderência do qui-quadrado: χ² = 20,14, 24 graus de liberdade, p = 0,69 — distribuição compatível com uniformidade; nenhum grupo é 'quente'.",
+  "url": "https://bicho-hoje.com/dados",
+  "identifier": "https://doi.org/10.5281/zenodo.XXXXXXX",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "datePublished": "2026-11-21",
+  "dateModified": "2026-11-21",
+  "version": "1.0.0",
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "loteria federal",
+    "jogo do bicho",
+    "estatística",
+    "qui-quadrado",
+    "dados abertos",
+    "probabilidade"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "Bicho Hoje",
+    "url": "https://bicho-hoje.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bicho Hoje",
+    "url": "https://bicho-hoje.com"
+  },
+  "temporalCoverage": "1962-09-15/2026-11-11",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Brasil"
+  },
+  "measurementTechnique": "Teste de aderência do qui-quadrado (χ²=20,14; gl=24; α=0,05)",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "concurso",
+      "description": "Número do concurso da Loteria Federal",
+      "unitText": "concurso"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "data",
+      "description": "Data do sorteio (AAAA-MM-DD)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "premio",
+      "description": "Posição do prêmio no concurso (1 a 5)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "milhar",
+      "description": "Número sorteado com 4 dígitos"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "grupo",
+      "description": "Grupo do jogo do bicho (1 a 25) derivado dos dois últimos dígitos"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CSV — prêmios individuais",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://bicho-hoje.com/dados/loteria-federal-grupos.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "JSON — estatísticas agregadas",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://bicho-hoje.com/dados/api/estatisticas.json"
+    }
+  ],
+  "citation": "BICHO HOJE. Loteria Federal — Grupos do Jogo do Bicho (1962–2026) [dataset]. Zenodo, 2026. DOI: 10.5281/zenodo.XXXXXXX",
+  "isBasedOn": "https://huggingface.co/datasets/dada1991/loteria-federal-grupos-jogo-do-bicho"
+}
+</script>
+<style>
+:root{--fg:#14181d;--mut:#5c6673;--line:#e3e7ec;--bg:#fff;--acc:#1f7a4d;--warn:#d94f2b}
+*{box-sizing:border-box}
+body{margin:0;background:#f7f8fa;color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:32px 20px 80px}
+article{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:34px 30px}
+h1{font-size:1.72rem;line-height:1.28;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:1.16rem;margin:44px 0 12px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:1rem;margin:26px 0 8px}
+p,li{color:#242a31}
+.lead{color:var(--mut);font-size:1.02rem;margin:0 0 26px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:12px;margin:0 0 8px}
+.card{background:#f4f7f5;border:1px solid #dce8e1;border-radius:10px;padding:14px 16px}
+.card b{display:block;font-size:1.32rem;letter-spacing:-.02em;color:#0f5030}
+.card span{font-size:.79rem;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+.verdict{border-left:3px solid var(--acc);background:#f4f9f6;padding:16px 18px;border-radius:0 8px 8px 0;margin:24px 0}
+.verdict p{margin:0}
+.chart{width:100%;height:auto;display:block;margin:6px 0 4px}
+.chart .lbl{font-size:11px;fill:#414b57}
+.chart .val{font-size:10.5px;fill:#6b7684}
+.chart .axis{font-size:10px;fill:#98a2af}
+.chart .avg{font-size:10.5px;fill:var(--warn);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:8px}
+th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left}
+th{font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);font-weight:600}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+td.dez{color:var(--mut);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pos{color:#1f7a4d} .neg{color:#8b6673}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+.tablewrap table{min-width:520px}
+@media(max-width:560px){table{font-size:.84rem}th,td{padding:6px 6px}}
+.dl{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.dl a{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-size:.92rem;font-weight:500;border:1px solid var(--line);color:var(--fg);background:#fff}
+.dl a.primary{background:#14181d;color:#fff;border-color:#14181d}
+pre{background:#14181d;color:#e6edf3;padding:16px;border-radius:10px;overflow-x:auto;font-size:.82rem;line-height:1.6}
+code{font:0.9em ui-monospace,SFMono-Regular,Menlo,monospace}
+p code,li code{background:#eef1f4;padding:1px 5px;border-radius:4px}
+button{font:inherit;font-size:.85rem;padding:7px 13px;border-radius:7px;border:1px solid var(--line);background:#fff;cursor:pointer}
+button:hover{background:#f2f5f7}
+.note{font-size:.86rem;color:var(--mut)}
+footer{margin-top:40px;font-size:.85rem;color:var(--mut)}
+@media(max-width:560px){article{padding:24px 18px}h1{font-size:1.42rem}.wrap{padding:18px 12px 60px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<article>
+
+<h1>64 anos da Loteria Federal, convertidos nos 25 grupos do bicho</h1>
+<p class="lead">Base de dados aberta com <strong>6.117</strong> concursos e <strong>30.390</strong> prêmios válidos (15/09/1962 a 11/11/2026), no formato que o jogo do bicho usa. Livre para reuso sob CC BY 4.0.</p>
+
+<div class="cards">
+  <div class="card"><span>Concursos com dados</span><b>6.091</b></div>
+  <div class="card"><span>Prêmios válidos</span><b>30.390</b></div>
+  <div class="card"><span>Período</span><b style="font-size:1rem">1962–2026</b></div>
+  <div class="card"><span>Licença</span><b style="font-size:1rem">CC BY 4.0</b></div>
+</div>
+
+<div class="verdict">
+<p><strong>O que os dados mostram:</strong> a distribuição dos 25 grupos é estatisticamente indistinguível de um sorteio uniforme. Qui-quadrado de aderência: <strong>χ² = 20,14</strong>, 24 graus de liberdade, valor crítico a 5% = 36,42, <strong>p = 0,69</strong>. Não existe grupo “quente” nem grupo “frio” com significância estatística.</p>
+</div>
+
+<h2>Frequência por grupo</h2>
+<p class="note">As 25 barras, sobre 30.390 prêmios. A linha tracejada é a média esperada (1.215,6). A diferença entre o grupo mais e o menos sorteado é de 112 prêmios em 30.390 — 9,2% da média, dentro da flutuação esperada.</p>
+<svg viewBox="0 0 720 610" role="img" aria-label="Frequência dos 25 grupos do jogo do bicho em 30.390 prêmios da Loteria Federal (1962–2026)" class="chart">
+<line x1="130" y1="18" x2="130" y2="576" stroke="#d7dce2"/>
+<line x1="418.2" y1="18" x2="418.2" y2="576" stroke="#d94f2b" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="418.2" y="13" text-anchor="middle" class="avg">média esperada 1.215,6</text>
+<g><title>Avestruz (grupo 01) — 1191 vezes</title><text x="120" y="39" text-anchor="end" class="lbl">01 Avestruz</text><rect x="130" y="30" width="226.8" height="13" rx="2" fill="#9aa5b1"/><text x="363.8" y="40" class="val">1.191</text></g><g><title>Águia (grupo 02) — 1223 vezes</title><text x="120" y="61" text-anchor="end" class="lbl">02 Águia</text><rect x="130" y="52" width="306.6" height="13" rx="2" fill="#1f7a4d"/><text x="443.6" y="62" class="val">1.223</text></g><g><title>Burro (grupo 03) — 1224 vezes</title><text x="120" y="83" text-anchor="end" class="lbl">03 Burro</text><rect x="130" y="74" width="309.1" height="13" rx="2" fill="#1f7a4d"/><text x="446.1" y="84" class="val">1.224</text></g><g><title>Borboleta (grupo 04) — 1248 vezes</title><text x="120" y="105" text-anchor="end" class="lbl">04 Borboleta</text><rect x="130" y="96" width="368.9" height="13" rx="2" fill="#1f7a4d"/><text x="505.9" y="106" class="val">1.248</text></g><g><title>Cachorro (grupo 05) — 1214 vezes</title><text x="120" y="127" text-anchor="end" class="lbl">05 Cachorro</text><rect x="130" y="118" width="284.2" height="13" rx="2" fill="#9aa5b1"/><text x="421.2" y="128" class="val">1.214</text></g><g><title>Cabra (grupo 06) — 1165 vezes</title><text x="120" y="149" text-anchor="end" class="lbl">06 Cabra</text><rect x="130" y="140" width="162.0" height="13" rx="2" fill="#9aa5b1"/><text x="299.0" y="150" class="val">1.165</text></g><g><title>Carneiro (grupo 07) — 1181 vezes</title><text x="120" y="171" text-anchor="end" class="lbl">07 Carneiro</text><rect x="130" y="162" width="201.9" height="13" rx="2" fill="#9aa5b1"/><text x="338.9" y="172" class="val">1.181</text></g><g><title>Camelo (grupo 08) — 1271 vezes</title><text x="120" y="193" text-anchor="end" class="lbl">08 Camelo</text><rect x="130" y="184" width="426.3" height="13" rx="2" fill="#1f7a4d"/><text x="563.3" y="194" class="val">1.271</text></g><g><title>Cobra (grupo 09) — 1213 vezes</title><text x="120" y="215" text-anchor="end" class="lbl">09 Cobra</text><rect x="130" y="206" width="281.7" height="13" rx="2" fill="#9aa5b1"/><text x="418.7" y="216" class="val">1.213</text></g><g><title>Coelho (grupo 10) — 1242 vezes</title><text x="120" y="237" text-anchor="end" class="lbl">10 Coelho</text><rect x="130" y="228" width="354.0" height="13" rx="2" fill="#1f7a4d"/><text x="491.0" y="238" class="val">1.242</text></g><g><title>Cavalo (grupo 11) — 1184 vezes</title><text x="120" y="259" text-anchor="end" class="lbl">11 Cavalo</text><rect x="130" y="250" width="209.4" height="13" rx="2" fill="#9aa5b1"/><text x="346.4" y="260" class="val">1.184</text></g><g><title>Elefante (grupo 12) — 1277 vezes</title><text x="120" y="281" text-anchor="end" class="lbl">12 Elefante</text><rect x="130" y="272" width="441.2" height="13" rx="2" fill="#1f7a4d"/><text x="578.2" y="282" class="val">1.277</text></g><g><title>Galo (grupo 13) — 1259 vezes</title><text x="120" y="303" text-anchor="end" class="lbl">13 Galo</text><rect x="130" y="294" width="396.3" height="13" rx="2" fill="#1f7a4d"/><text x="533.3" y="304" class="val">1.259</text></g><g><title>Gato (grupo 14) — 1274 vezes</title><text x="120" y="325" text-anchor="end" class="lbl">14 Gato</text><rect x="130" y="316" width="433.7" height="13" rx="2" fill="#1f7a4d"/><text x="570.7" y="326" class="val">1.274</text></g><g><title>Jacaré (grupo 15) — 1217 vezes</title><text x="120" y="347" text-anchor="end" class="lbl">15 Jacaré</text><rect x="130" y="338" width="291.7" height="13" rx="2" fill="#1f7a4d"/><text x="428.7" y="348" class="val">1.217</text></g><g><title>Leão (grupo 16) — 1198 vezes</title><text x="120" y="369" text-anchor="end" class="lbl">16 Leão</text><rect x="130" y="360" width="244.3" height="13" rx="2" fill="#9aa5b1"/><text x="381.3" y="370" class="val">1.198</text></g><g><title>Macaco (grupo 17) — 1202 vezes</title><text x="120" y="391" text-anchor="end" class="lbl">17 Macaco</text><rect x="130" y="382" width="254.3" height="13" rx="2" fill="#9aa5b1"/><text x="391.3" y="392" class="val">1.202</text></g><g><title>Porco (grupo 18) — 1195 vezes</title><text x="120" y="413" text-anchor="end" class="lbl">18 Porco</text><rect x="130" y="404" width="236.8" height="13" rx="2" fill="#9aa5b1"/><text x="373.8" y="414" class="val">1.195</text></g><g><title>Pavão (grupo 19) — 1236 vezes</title><text x="120" y="435" text-anchor="end" class="lbl">19 Pavão</text><rect x="130" y="426" width="339.0" height="13" rx="2" fill="#1f7a4d"/><text x="476.0" y="436" class="val">1.236</text></g><g><title>Peru (grupo 20) — 1202 vezes</title><text x="120" y="457" text-anchor="end" class="lbl">20 Peru</text><rect x="130" y="448" width="254.3" height="13" rx="2" fill="#9aa5b1"/><text x="391.3" y="458" class="val">1.202</text></g><g><title>Touro (grupo 21) — 1179 vezes</title><text x="120" y="479" text-anchor="end" class="lbl">21 Touro</text><rect x="130" y="470" width="196.9" height="13" rx="2" fill="#9aa5b1"/><text x="333.9" y="480" class="val">1.179</text></g><g><title>Tigre (grupo 22) — 1174 vezes</title><text x="120" y="501" text-anchor="end" class="lbl">22 Tigre</text><rect x="130" y="492" width="184.5" height="13" rx="2" fill="#9aa5b1"/><text x="321.5" y="502" class="val">1.174</text></g><g><title>Urso (grupo 23) — 1215 vezes</title><text x="120" y="523" text-anchor="end" class="lbl">23 Urso</text><rect x="130" y="514" width="286.7" height="13" rx="2" fill="#9aa5b1"/><text x="423.7" y="524" class="val">1.215</text></g><g><title>Veado (grupo 24) — 1213 vezes</title><text x="120" y="545" text-anchor="end" class="lbl">24 Veado</text><rect x="130" y="536" width="281.7" height="13" rx="2" fill="#9aa5b1"/><text x="418.7" y="546" class="val">1.213</text></g><g><title>Vaca (grupo 25) — 1193 vezes</title><text x="120" y="567" text-anchor="end" class="lbl">25 Vaca</text><rect x="130" y="558" width="231.8" height="13" rx="2" fill="#9aa5b1"/><text x="368.8" y="568" class="val">1.193</text></g>
+<line x1="130" y1="576" x2="646" y2="576" stroke="#d7dce2"/>
+<text x="130" y="598" class="axis">1100</text>
+<text x="646" y="598" text-anchor="end" class="axis">1307</text>
+</svg>
+
+<h2>Tabela completa</h2>
+<div class="tablewrap">
+<table>
+<thead><tr><th>Grupo</th><th>Bicho</th><th>Dezenas</th><th style="text-align:right">Vezes</th><th style="text-align:right">%</th><th style="text-align:right">Desvio</th></tr></thead>
+<tbody>
+<tr><td>01</td><td>Avestruz</td><td class="dez">01 02 03 04</td><td class="num">1.191</td><td class="num">3,92%</td><td class="num neg">-2,02%</td></tr>
+<tr><td>02</td><td>Águia</td><td class="dez">05 06 07 08</td><td class="num">1.223</td><td class="num">4,02%</td><td class="num pos">+0,61%</td></tr>
+<tr><td>03</td><td>Burro</td><td class="dez">09 10 11 12</td><td class="num">1.224</td><td class="num">4,03%</td><td class="num pos">+0,69%</td></tr>
+<tr><td>04</td><td>Borboleta</td><td class="dez">13 14 15 16</td><td class="num">1.248</td><td class="num">4,11%</td><td class="num pos">+2,67%</td></tr>
+<tr><td>05</td><td>Cachorro</td><td class="dez">17 18 19 20</td><td class="num">1.214</td><td class="num">3,99%</td><td class="num neg">-0,13%</td></tr>
+<tr><td>06</td><td>Cabra</td><td class="dez">21 22 23 24</td><td class="num">1.165</td><td class="num">3,83%</td><td class="num neg">-4,16%</td></tr>
+<tr><td>07</td><td>Carneiro</td><td class="dez">25 26 27 28</td><td class="num">1.181</td><td class="num">3,89%</td><td class="num neg">-2,85%</td></tr>
+<tr><td>08</td><td>Camelo</td><td class="dez">29 30 31 32</td><td class="num">1.271</td><td class="num">4,18%</td><td class="num pos">+4,56%</td></tr>
+<tr><td>09</td><td>Cobra</td><td class="dez">33 34 35 36</td><td class="num">1.213</td><td class="num">3,99%</td><td class="num neg">-0,21%</td></tr>
+<tr><td>10</td><td>Coelho</td><td class="dez">37 38 39 40</td><td class="num">1.242</td><td class="num">4,09%</td><td class="num pos">+2,17%</td></tr>
+<tr><td>11</td><td>Cavalo</td><td class="dez">41 42 43 44</td><td class="num">1.184</td><td class="num">3,90%</td><td class="num neg">-2,60%</td></tr>
+<tr><td>12</td><td>Elefante</td><td class="dez">45 46 47 48</td><td class="num">1.277</td><td class="num">4,20%</td><td class="num pos">+5,05%</td></tr>
+<tr><td>13</td><td>Galo</td><td class="dez">49 50 51 52</td><td class="num">1.259</td><td class="num">4,14%</td><td class="num pos">+3,57%</td></tr>
+<tr><td>14</td><td>Gato</td><td class="dez">53 54 55 56</td><td class="num">1.274</td><td class="num">4,19%</td><td class="num pos">+4,80%</td></tr>
+<tr><td>15</td><td>Jacaré</td><td class="dez">57 58 59 60</td><td class="num">1.217</td><td class="num">4,00%</td><td class="num pos">+0,12%</td></tr>
+<tr><td>16</td><td>Leão</td><td class="dez">61 62 63 64</td><td class="num">1.198</td><td class="num">3,94%</td><td class="num neg">-1,45%</td></tr>
+<tr><td>17</td><td>Macaco</td><td class="dez">65 66 67 68</td><td class="num">1.202</td><td class="num">3,96%</td><td class="num neg">-1,12%</td></tr>
+<tr><td>18</td><td>Porco</td><td class="dez">69 70 71 72</td><td class="num">1.195</td><td class="num">3,93%</td><td class="num neg">-1,69%</td></tr>
+<tr><td>19</td><td>Pavão</td><td class="dez">73 74 75 76</td><td class="num">1.236</td><td class="num">4,07%</td><td class="num pos">+1,68%</td></tr>
+<tr><td>20</td><td>Peru</td><td class="dez">77 78 79 80</td><td class="num">1.202</td><td class="num">3,96%</td><td class="num neg">-1,12%</td></tr>
+<tr><td>21</td><td>Touro</td><td class="dez">81 82 83 84</td><td class="num">1.179</td><td class="num">3,88%</td><td class="num neg">-3,01%</td></tr>
+<tr><td>22</td><td>Tigre</td><td class="dez">85 86 87 88</td><td class="num">1.174</td><td class="num">3,86%</td><td class="num neg">-3,42%</td></tr>
+<tr><td>23</td><td>Urso</td><td class="dez">89 90 91 92</td><td class="num">1.215</td><td class="num">4,00%</td><td class="num neg">-0,05%</td></tr>
+<tr><td>24</td><td>Veado</td><td class="dez">93 94 95 96</td><td class="num">1.213</td><td class="num">3,99%</td><td class="num neg">-0,21%</td></tr>
+<tr><td>25</td><td>Vaca</td><td class="dez">97 98 99 00</td><td class="num">1.193</td><td class="num">3,93%</td><td class="num neg">-1,86%</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Método</h2>
+<ul>
+<li><strong>Fonte:</strong> resultados oficiais da Loteria Federal, concursos 1 a 6.117, de 15/09/1962 a 11/11/2026.</li>
+<li><strong>Conversão:</strong> cada prêmio (milhar de 4 dígitos) é mapeado para um grupo do bicho pelos <em>dois últimos dígitos</em>, seguindo a tabela tradicional de 25 grupos.</li>
+<li><strong>Integridade:</strong> os 30.390 prêmios são registros válidos — nenhum foi descartado. Números terminados em <code>0000</code> são resultados reais e foram mantidos: acontecem 4 vezes na base, contra 3,04 esperadas por azar, ou seja, dentro do normal.</li>
+<li><strong>Lacunas da fonte:</strong> a numeração dos concursos vai de 1 a 6.117, mas 6.091 concursos têm registro. Faltam 26 números de concurso e 16 concursos antigos (em torno do nº 2.871–2.900) trazem apenas 1 prêmio em vez de 5. São falhas de digitalização da fonte, não resultados suprimidos, e não alteram a conclusão: cada prêmio é um sorteio independente de 4 dígitos.</li>
+<li><strong>Teste:</strong> qui-quadrado de aderência com 24 graus de liberdade contra a hipótese de uniformidade (frequência esperada de 1.215,6 por grupo).</li>
+<li><strong>Replicabilidade:</strong> os scripts de coleta e de cálculo estão no repositório; qualquer pessoa pode baixar a fonte e reproduzir os mesmos números.</li>
+</ul>
+
+<h2>Baixar os dados</h2>
+<div class="dl">
+  <a class="primary" href="/dados/loteria-federal-grupos.csv" download>CSV — prêmios individuais</a>
+  <a href="/dados/api/estatisticas.json">JSON — estatísticas agregadas</a>
+  <a href="https://huggingface.co/datasets/dada1991/loteria-federal-grupos-jogo-do-bicho">Hugging Face</a>
+  <a href="https://doi.org/10.5281/zenodo.XXXXXXX">DOI (Zenodo)</a>
+</div>
+<p class="note">O CSV traz uma linha por prêmio: <code>concurso, data, premio, milhar, grupo, bicho</code>.</p>
+
+<h2>API aberta</h2>
+<p>Os mesmos números, em JSON, para uso em aplicativos, planilhas e aulas:</p>
+<pre><code>GET https://bicho-hoje.com/dados/api/estatisticas.json
+GET https://bicho-hoje.com/dados/api/ultimo.json</code></pre>
+<p class="note">Somente leitura, sem chave, sem limite de requisições. Se for usar em produção, um link para a fonte é bem-vindo (não é obrigatório pela licença).</p>
+
+<h2>Como citar</h2>
+<p>Se você usar esta base em pesquisa, aula, reportagem ou aplicativo:</p>
+<pre id="bib">@dataset{bicho_hoje_federal_2026,
+  author    = {{Bicho Hoje}},
+  title     = {Loteria Federal --- Grupos do Jogo do Bicho (1962--2026)},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {1.0.0},
+  doi       = {10.5281/zenodo.XXXXXXX},
+  url       = {https://bicho-hoje.com/dados},
+  note      = {6117 concursos, 30390 prêmios válidos, CC BY 4.0}
+}</pre>
+<button onclick="navigator.clipboard.writeText(document.getElementById('bib').textContent).then(()=>{this.textContent='Copiado ✓';setTimeout(()=>this.textContent='Copiar BibTeX',2000)})">Copiar BibTeX</button>
+
+<h2>Licença</h2>
+<p>Dados sob <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Atribuição 4.0</a>. Você pode copiar, redistribuir, remixar e usar comercialmente, desde que cite a fonte. O código dos scripts está sob MIT.</p>
+
+<footer>
+<p>Base mantida por Bicho Hoje · atualizada automaticamente todo dia · última atualização: 2026-11-20 · <a href="https://bicho-hoje.com/fontes">fontes</a></p>
+</footer>
+
+</article>
+</div>
+</body>
+</html>

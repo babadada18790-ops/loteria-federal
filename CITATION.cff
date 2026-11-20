@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Se usar esta base, cite como abaixo."
+title: "Loteria Federal — Grupos do Jogo do Bicho (1962–2026)"
+abstract: >-
+  Base aberta com 30.390 prêmios válidos da Loteria Federal (concursos 1 a 6.117,
+  1962 a 2026), convertidos nos 25 grupos do jogo do bicho. Teste de aderência do
+  qui-quadrado: χ² = 20,14, 24 graus de liberdade, p = 0,69 — distribuição
+  compatível com uniformidade, sem grupo "quente".
+authors:
+  - name: "Bicho Hoje"
+    website: "https://bicho-hoje.com"
+version: "1.0.0"
+date-released: "2026-11-21"
+license: CC-BY-4.0
+doi: "10.5281/zenodo.XXXXXXX"
+url: "https://bicho-hoje.com/blog/federal-nenhum-grupo-quente"
+repository-code: "https://github.com/babadada18790-ops/loteria-federal"
+keywords:
+  - loteria federal
+  - jogo do bicho
+  - estatística
+  - qui-quadrado
+  - dados abertos
+  - brasil
+type: dataset

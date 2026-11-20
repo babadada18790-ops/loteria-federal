@@ -1,0 +1,52 @@
+name: atualizar-dados
+
+on:
+  schedule:
+    - cron: "15 12 * * *"   # 09:15 em Brasília (UTC-3)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: dados
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Baixar base
+        run: python scripts/fetch_dataset.py --out data/loteria-federal.csv
+
+      - name: Recalcular estatísticas
+        run: python scripts/stats.py --in data/loteria-federal.csv --out docs/api/
+
+      - name: Conferir invariantes
+        run: |
+          python - <<'PY'
+          import json, sys
+          d = json.load(open("docs/api/estatisticas.json"))
+          n = d["premios"]
+          if n < 30000:
+              sys.exit(f"base pequena demais: {n} prêmios")
+          if len(d["grupos"]) != 25:
+              sys.exit("esperava 25 grupos")
+          print(f"ok: {n} prêmios, chi2={d['teste']['estatistica']}, p={d['teste']['p_valor']}")
+          PY
+
+      - name: Commitar se mudou
+        run: |
+          git config user.name "bot-dados"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "dados: atualização $(date -u +%F)"
+          git push || true

@@ -1,0 +1,378 @@
+{
+ "gerado_em": "2026-11-20T16:17:59Z",
+ "fonte": "https://bicho-hoje.com/blog/federal-nenhum-grupo-quente",
+ "dataset": "https://huggingface.co/datasets/dada1991/loteria-federal-grupos-jogo-do-bicho",
+ "licenca": "CC BY 4.0",
+ "periodo": "1962-09-15 a 2026-11-11",
+ "concursos": 6117,
+ "concursos_com_dados": 6091,
+ "premios": 30390,
+ "premios_brutos": 30390,
+ "premios_descartados": 0,
+ "esperado_por_grupo": 1215.6,
+ "teste": {
+  "nome": "qui-quadrado de aderência",
+  "estatistica": 20.14,
+  "graus_de_liberdade": 24,
+  "valor_critico_5pct": 36.42,
+  "p_valor": 0.6886,
+  "conclusao": "compatível com distribuição uniforme"
+ },
+ "grupos": [
+  {
+   "grupo": 12,
+   "bicho": "Elefante",
+   "dezenas": [
+    "45",
+    "46",
+    "47",
+    "48"
+   ],
+   "vezes": 1277,
+   "percentual": 4.2,
+   "desvio_pct": 5.05,
+   "ranking": 1
+  },
+  {
+   "grupo": 14,
+   "bicho": "Gato",
+   "dezenas": [
+    "53",
+    "54",
+    "55",
+    "56"
+   ],
+   "vezes": 1274,
+   "percentual": 4.19,
+   "desvio_pct": 4.8,
+   "ranking": 2
+  },
+  {
+   "grupo": 8,
+   "bicho": "Camelo",
+   "dezenas": [
+    "29",
+    "30",
+    "31",
+    "32"
+   ],
+   "vezes": 1271,
+   "percentual": 4.18,
+   "desvio_pct": 4.56,
+   "ranking": 3
+  },
+  {
+   "grupo": 13,
+   "bicho": "Galo",
+   "dezenas": [
+    "49",
+    "50",
+    "51",
+    "52"
+   ],
+   "vezes": 1259,
+   "percentual": 4.14,
+   "desvio_pct": 3.57,
+   "ranking": 4
+  },
+  {
+   "grupo": 4,
+   "bicho": "Borboleta",
+   "dezenas": [
+    "13",
+    "14",
+    "15",
+    "16"
+   ],
+   "vezes": 1248,
+   "percentual": 4.11,
+   "desvio_pct": 2.67,
+   "ranking": 5
+  },
+  {
+   "grupo": 10,
+   "bicho": "Coelho",
+   "dezenas": [
+    "37",
+    "38",
+    "39",
+    "40"
+   ],
+   "vezes": 1242,
+   "percentual": 4.09,
+   "desvio_pct": 2.17,
+   "ranking": 6
+  },
+  {
+   "grupo": 19,
+   "bicho": "Pavão",
+   "dezenas": [
+    "73",
+    "74",
+    "75",
+    "76"
+   ],
+   "vezes": 1236,
+   "percentual": 4.07,
+   "desvio_pct": 1.68,
+   "ranking": 7
+  },
+  {
+   "grupo": 3,
+   "bicho": "Burro",
+   "dezenas": [
+    "09",
+    "10",
+    "11",
+    "12"
+   ],
+   "vezes": 1224,
+   "percentual": 4.03,
+   "desvio_pct": 0.69,
+   "ranking": 8
+  },
+  {
+   "grupo": 2,
+   "bicho": "Águia",
+   "dezenas": [
+    "05",
+    "06",
+    "07",
+    "08"
+   ],
+   "vezes": 1223,
+   "percentual": 4.02,
+   "desvio_pct": 0.61,
+   "ranking": 9
+  },
+  {
+   "grupo": 15,
+   "bicho": "Jacaré",
+   "dezenas": [
+    "57",
+    "58",
+    "59",
+    "60"
+   ],
+   "vezes": 1217,
+   "percentual": 4.0,
+   "desvio_pct": 0.12,
+   "ranking": 10
+  },
+  {
+   "grupo": 23,
+   "bicho": "Urso",
+   "dezenas": [
+    "89",
+    "90",
+    "91",
+    "92"
+   ],
+   "vezes": 1215,
+   "percentual": 4.0,
+   "desvio_pct": -0.05,
+   "ranking": 11
+  },
+  {
+   "grupo": 5,
+   "bicho": "Cachorro",
+   "dezenas": [
+    "17",
+    "18",
+    "19",
+    "20"
+   ],
+   "vezes": 1214,
+   "percentual": 3.99,
+   "desvio_pct": -0.13,
+   "ranking": 12
+  },
+  {
+   "grupo": 9,
+   "bicho": "Cobra",
+   "dezenas": [
+    "33",
+    "34",
+    "35",
+    "36"
+   ],
+   "vezes": 1213,
+   "percentual": 3.99,
+   "desvio_pct": -0.21,
+   "ranking": 13
+  },
+  {
+   "grupo": 24,
+   "bicho": "Veado",
+   "dezenas": [
+    "93",
+    "94",
+    "95",
+    "96"
+   ],
+   "vezes": 1213,
+   "percentual": 3.99,
+   "desvio_pct": -0.21,
+   "ranking": 14
+  },
+  {
+   "grupo": 17,
+   "bicho": "Macaco",
+   "dezenas": [
+    "65",
+    "66",
+    "67",
+    "68"
+   ],
+   "vezes": 1202,
+   "percentual": 3.96,
+   "desvio_pct": -1.12,
+   "ranking": 15
+  },
+  {
+   "grupo": 20,
+   "bicho": "Peru",
+   "dezenas": [
+    "77",
+    "78",
+    "79",
+    "80"
+   ],
+   "vezes": 1202,
+   "percentual": 3.96,
+   "desvio_pct": -1.12,
+   "ranking": 16
+  },
+  {
+   "grupo": 16,
+   "bicho": "Leão",
+   "dezenas": [
+    "61",
+    "62",
+    "63",
+    "64"
+   ],
+   "vezes": 1198,
+   "percentual": 3.94,
+   "desvio_pct": -1.45,
+   "ranking": 17
+  },
+  {
+   "grupo": 18,
+   "bicho": "Porco",
+   "dezenas": [
+    "69",
+    "70",
+    "71",
+    "72"
+   ],
+   "vezes": 1195,
+   "percentual": 3.93,
+   "desvio_pct": -1.69,
+   "ranking": 18
+  },
+  {
+   "grupo": 25,
+   "bicho": "Vaca",
+   "dezenas": [
+    "97",
+    "98",
+    "99",
+    "00"
+   ],
+   "vezes": 1193,
+   "percentual": 3.93,
+   "desvio_pct": -1.86,
+   "ranking": 19
+  },
+  {
+   "grupo": 1,
+   "bicho": "Avestruz",
+   "dezenas": [
+    "01",
+    "02",
+    "03",
+    "04"
+   ],
+   "vezes": 1191,
+   "percentual": 3.92,
+   "desvio_pct": -2.02,
+   "ranking": 20
+  },
+  {
+   "grupo": 11,
+   "bicho": "Cavalo",
+   "dezenas": [
+    "41",
+    "42",
+    "43",
+    "44"
+   ],
+   "vezes": 1184,
+   "percentual": 3.9,
+   "desvio_pct": -2.6,
+   "ranking": 21
+  },
+  {
+   "grupo": 7,
+   "bicho": "Carneiro",
+   "dezenas": [
+    "25",
+    "26",
+    "27",
+    "28"
+   ],
+   "vezes": 1181,
+   "percentual": 3.89,
+   "desvio_pct": -2.85,
+   "ranking": 22
+  },
+  {
+   "grupo": 21,
+   "bicho": "Touro",
+   "dezenas": [
+    "81",
+    "82",
+    "83",
+    "84"
+   ],
+   "vezes": 1179,
+   "percentual": 3.88,
+   "desvio_pct": -3.01,
+   "ranking": 23
+  },
+  {
+   "grupo": 22,
+   "bicho": "Tigre",
+   "dezenas": [
+    "85",
+    "86",
+    "87",
+    "88"
+   ],
+   "vezes": 1174,
+   "percentual": 3.86,
+   "desvio_pct": -3.42,
+   "ranking": 24
+  },
+  {
+   "grupo": 6,
+   "bicho": "Cabra",
+   "dezenas": [
+    "21",
+    "22",
+    "23",
+    "24"
+   ],
+   "vezes": 1165,
+   "percentual": 3.83,
+   "desvio_pct": -4.16,
+   "ranking": 25
+  }
+ ],
+ "milhar_mais_sorteado": {
+  "milhar": 9932,
+  "vezes": 11,
+  "milhares_distintos": 9499
+ }
+}

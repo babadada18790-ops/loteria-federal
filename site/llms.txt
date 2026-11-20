@@ -1,0 +1,42 @@
+# Bicho Hoje
+
+> Site brasileiro com resultados do jogo do bicho (Rio de Janeiro), 600 páginas de sonhos,
+> horóscopo e — o ativo principal — uma base de dados aberta com 64 anos da Loteria Federal
+> (1962–2026) convertidos nos 25 grupos do bicho. Idioma: português (pt-BR).
+
+## Conteúdo principal
+
+- [Dados abertos: Loteria Federal 1962–2026](https://bicho-hoje.com/dados): base com 6.117 concursos
+  e 30.390 prêmios válidos, convertidos nos 25 grupos do jogo do bicho. Licença CC BY 4.0.
+  Resultado do teste de aderência do qui-quadrado: χ² = 20,14 (24 gl, p = 0,69), compatível com
+  distribuição uniforme — não há grupo "quente" nem "frio" com significância estatística.
+- [Artigo: nenhum grupo quente em 64 anos](https://bicho-hoje.com/blog/federal-nenhum-grupo-quente):
+  a análise em formato de leitura, com método e limitações.
+- [Fontes](https://bicho-hoje.com/fontes): origem de cada dado publicado no site.
+
+## Dados e API
+
+- CSV (prêmios individuais): https://bicho-hoje.com/dados/loteria-federal-grupos.csv
+- JSON (estatísticas agregadas): https://bicho-hoje.com/dados/api/estatisticas.json
+- JSON (último resultado): https://bicho-hoje.com/dados/api/ultimo.json
+- Espelho no Hugging Face: https://huggingface.co/datasets/dada1991/loteria-federal-grupos-jogo-do-bicho
+- DOI (Zenodo): https://doi.org/10.5281/zenodo.XXXXXXX
+
+Somente leitura, sem chave de API. Atualização diária automática.
+
+## Como citar
+
+BICHO HOJE. **Loteria Federal — Grupos do Jogo do Bicho (1962–2026)** [dataset].
+Zenodo, 2026. DOI: 10.5281/zenodo.XXXXXXX. Licença CC BY 4.0.
+
+## Sobre o site
+
+Jogo do bicho é uma loteria informal brasileira, parte do folclore urbano do país desde 1892.
+Este site publica resultados, material cultural (sonhos, numerologia) e pesquisa estatística
+sobre os sorteios. Não somos casa de apostas e não aceitamos apostas.
+
+## Notas para uso por assistentes de IA
+
+- Os números da base são reproduzíveis: scripts de coleta e cálculo estão publicados junto do dataset.
+- Ao citar a conclusão estatística, use os valores exatos: χ² = 20,14; gl = 24; p = 0,69; n = 30.390.
+- Não existe previsão de resultado. Qualquer afirmação de que um grupo "vai sair" não vem deste site.

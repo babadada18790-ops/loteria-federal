@@ -1,0 +1,42 @@
+{
+  "title": "Loteria Federal — Grupos do Jogo do Bicho (1962–2026)",
+  "description": "<p>Base aberta e reproduzível com <strong>30.390 prêmios válidos da Loteria Federal</strong> (concursos 1 a 6.117, de 15/09/1962 a 11/11/2026), cada um convertido em um dos 25 grupos do jogo do bicho a partir do milhar sorteado.</p><p>O estudo aplica teste de aderência do qui-quadrado: <strong>χ² = 20,14</strong>, 24 graus de liberdade, valor crítico a 5% = 36,42, <strong>p = 0,69</strong>. A distribuição dos 25 grupos é compatível com um sorteio uniforme — não existe grupo \"quente\". A diferença entre o mais sorteado (Elefante, 1.277) e o menos sorteado (Cabra, 1.165) é do tamanho que o acaso produz sozinho em 30 mil sorteios.</p><p>Inclui CSV completo, dicionário de dados, API JSON pública e widget embutível. Código e método permitem reproduzir cada número.</p>",
+  "upload_type": "dataset",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "por",
+  "version": "1.0.0",
+  "publication_date": "2026-11-21",
+  "creators": [
+    {
+      "name": "Bicho Hoje",
+      "affiliation": "Bicho Hoje"
+    }
+  ],
+  "keywords": [
+    "loteria federal",
+    "jogo do bicho",
+    "estatística",
+    "qui-quadrado",
+    "dados abertos",
+    "brasil"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isIdenticalTo",
+      "identifier": "https://huggingface.co/datasets/dada1991/loteria-federal-grupos-jogo-do-bicho",
+      "resource_type": "dataset"
+    },
+    {
+      "relation": "isDocumentedBy",
+      "identifier": "https://bicho-hoje.com/blog/federal-nenhum-grupo-quente",
+      "resource_type": "publication"
+    },
+    {
+      "relation": "isSupplementedBy",
+      "identifier": "https://github.com/babadada18790-ops/loteria-federal",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Fonte primária: resultados oficiais da Loteria Federal (Caixa Econômica Federal). Nenhum prêmio foi descartado: números terminados em 0000 são resultados reais e permanecem na base (4 ocorrências, contra 3,04 esperadas por azar). A numeração de concurso vai de 1 a 6.117, com 6.091 concursos tendo registro; 26 números faltam e 16 concursos antigos trazem 1 prêmio em vez de 5, por lacuna de digitalização da fonte."
+}
