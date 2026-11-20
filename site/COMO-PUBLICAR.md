@@ -23,13 +23,13 @@ Tudo aqui já está pronto e testado. Falta só colocar nos lugares certos e tro
    - **License**: Creative Commons Attribution 4.0
    - **Keywords**: loteria federal, jogo do bicho, estatística, qui-quadrado, dados abertos
    - **Related identifiers**: `is supplemented by` → a URL do repositório no GitHub
-4. Publique. O DOI aparece na hora, no formato `10.5281/zenodo.XXXXXXX`.
+4. Publique. O DOI aparece na hora, no formato `10.5281/zenodo.24403509`.
 
 ## Passo 3 — Trocar o DOI (é o único número que falta)
 
 No `dados.html`, procure `XXXXXXX` e troque pelo número real. Aparece em 3 lugares:
 
-- `"identifier": "https://doi.org/10.5281/zenodo.XXXXXXX"` (JSON-LD)
+- `"identifier": "https://doi.org/10.5281/zenodo.24403509"` (JSON-LD)
 - o botão `DOI (Zenodo)` na seção de download
 - o bloco de BibTeX
 

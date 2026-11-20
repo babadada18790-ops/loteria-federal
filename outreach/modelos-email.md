@@ -39,7 +39,7 @@ Assunto: `Sugestão de recurso para a página de links úteis: base aberta para 
 > Uso que pode interessar a vocês: é um caso real, brasileiro e verificável para ensinar teste de aderência em disciplina de estatística básica — dados completos, teste reproduzível em duas linhas de Python, e resultado "não significativo", que é justamente o caso que os exemplos de livro nunca mostram.
 >
 > Base: https://bicho-hoje.com/dados
-> DOI: https://doi.org/10.5281/zenodo.XXXXXXX
+> DOI: https://doi.org/10.5281/zenodo.24403509
 >
 > Se fizer sentido incluir na página de links úteis, ótimo. Se preferir usar apenas como exemplo em sala, também serve — os dados são CC BY 4.0, sem restrição de uso.
 >

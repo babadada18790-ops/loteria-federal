@@ -20,7 +20,7 @@ Troque `XXXXXXX` pelo número real do DOI depois de publicar no Zenodo.
   "name": "Loteria Federal — Grupos do Jogo do Bicho (1962–2026)",
   "description": "30.390 prêmios válidos da Loteria Federal (concursos 1 a 6.117, 1962–2026) convertidos nos 25 grupos do jogo do bicho. Teste de aderência do qui-quadrado: χ² = 20,14, 24 graus de liberdade, p = 0,69 — distribuição compatível com uniformidade; nenhum grupo é 'quente'.",
   "url": "https://bicho-hoje.com/dados",
-  "identifier": "https://doi.org/10.5281/zenodo.XXXXXXX",
+  "identifier": "https://doi.org/10.5281/zenodo.24403509",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "datePublished": "2026-11-21",
@@ -65,9 +65,9 @@ Troque `XXXXXXX` pelo número real do DOI depois de publicar no Zenodo.
       "contentUrl": "https://babadada18790-ops.github.io/loteria-federal/api/estatisticas.json"
     }
   ],
-  "citation": "Bicho Hoje (2026). Loteria Federal — Grupos do Jogo do Bicho (1962–2026). Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX",
+  "citation": "Bicho Hoje (2026). Loteria Federal — Grupos do Jogo do Bicho (1962–2026). Zenodo. https://doi.org/10.5281/zenodo.24403509",
   "sameAs": [
-    "https://doi.org/10.5281/zenodo.XXXXXXX",
+    "https://doi.org/10.5281/zenodo.24403509",
     "https://huggingface.co/datasets/dada1991/loteria-federal-grupos-jogo-do-bicho",
     "https://github.com/babadada18790-ops/loteria-federal"
   ]

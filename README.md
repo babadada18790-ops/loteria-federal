@@ -1,6 +1,6 @@
 # Loteria Federal — Grupos do Jogo do Bicho (1962–2026)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24403509.svg)](https://doi.org/10.5281/zenodo.24403509)
 [![Licença: CC BY 4.0](https://img.shields.io/badge/dados-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Site](https://img.shields.io/badge/site-bicho--hoje.com-2f6f4f.svg)](https://bicho-hoje.com/blog/federal-nenhum-grupo-quente)
 
@@ -70,7 +70,7 @@ Renderiza o último resultado com o crédito "Fonte: Bicho Hoje". Não exige lin
   author    = {{Bicho Hoje}},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
+  doi       = {10.5281/zenodo.24403509},
   url       = {https://bicho-hoje.com/blog/federal-nenhum-grupo-quente}
 }
 ```

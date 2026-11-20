@@ -20,14 +20,14 @@
 - JSON (estatísticas agregadas): https://bicho-hoje.com/dados/api/estatisticas.json
 - JSON (último resultado): https://bicho-hoje.com/dados/api/ultimo.json
 - Espelho no Hugging Face: https://huggingface.co/datasets/dada1991/loteria-federal-grupos-jogo-do-bicho
-- DOI (Zenodo): https://doi.org/10.5281/zenodo.XXXXXXX
+- DOI (Zenodo): https://doi.org/10.5281/zenodo.24403509
 
 Somente leitura, sem chave de API. Atualização diária automática.
 
 ## Como citar
 
 BICHO HOJE. **Loteria Federal — Grupos do Jogo do Bicho (1962–2026)** [dataset].
-Zenodo, 2026. DOI: 10.5281/zenodo.XXXXXXX. Licença CC BY 4.0.
+Zenodo, 2026. DOI: 10.5281/zenodo.24403509. Licença CC BY 4.0.
 
 ## Sobre o site
 

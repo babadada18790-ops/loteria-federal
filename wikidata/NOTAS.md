@@ -28,7 +28,7 @@ Propriedades mínimas para um item de dataset:
 | Description (pt) | conjunto de dados estatístico sobre a Loteria Federal brasileira |
 | P31 (instance of) | Q1172284 (conjunto de dados) |
 | P1476 (title) | Loteria Federal — Grupos do Jogo do Bicho (1962–2026) |
-| P356 (DOI) | 10.5281/zenodo.XXXXXXX |
+| P356 (DOI) | 10.5281/zenodo.24403509 |
 | P953 (full work URL) | https://bicho-hoje.com/dados |
 | P123 (publisher) | Bicho Hoje *(crie o item da organização antes, se não existir)* |
 | P577 (publication date) | 21 novembro 2026 |
